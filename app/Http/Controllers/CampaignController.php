@@ -25,7 +25,8 @@ class CampaignController extends Controller
      */
     public function create()
     {
-        //
+        $data['title']='Campaign Create';
+        return view('admin.campaign.create',$data);
     }
 
     /**

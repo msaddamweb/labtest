@@ -17,7 +17,8 @@ class CreateCampaignsTable extends Migration
             $table->bigIncrements('id');
             $table->string('campaign_title');
             $table->text('sender');
-            $table->
+            $table->longText('message');
+            $table->enum('status',['pending','processing','complete']);
             $table->timestamps();
         });
     }
