@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('dashboard','DashboardController@index')->name('admin.dashboard');
+Route::resource('campaign','CampaignController');
